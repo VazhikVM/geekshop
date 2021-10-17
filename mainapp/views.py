@@ -4,40 +4,54 @@ from django.shortcuts import render
 
 
 def index(request):
-    return render(request, 'mainapp/index.html')
+    context = {
+        'title': 'Главная'
+    }
+    return render(request, 'mainapp/index.html', context)
 
 
 def contact(request):
-
-    return render(request, 'mainapp/contact.html')
+    context = {
+        'title': 'Контакты'
+    }
+    return render(request, 'mainapp/contact.html', context)
 
 
 def products(request):
-    return render(request, 'mainapp/products.html')
+    context = {
+        'title': 'Продукты'
+    }
+    return render(request, 'mainapp/products.html', context)
 
 
 links_menu = [
-    {'url': 'products',
-     'title': 'Все'
-     },
-    {'url': 'products_home',
-     'title': 'Дом'
-     },
-    {'url': 'products_office',
-     'title': 'Офис'
-     },
-    {'url': 'products_modern',
-     'title': 'Модерн'
-     },
-    {'url': 'products_classic',
-     'title': 'Классика'
-     }
+    {
+        'url': 'products',
+        'title': 'все'
+    },
+    {
+        'url': 'products_home',
+        'title': 'дом'
+    },
+    {
+        'url': 'products_office',
+        'title': 'офис'
+    },
+    {
+        'url': 'products_modern',
+        'title': 'модерн'
+    },
+    {
+        'url': 'products_classic',
+        'title': 'классика'
+    },
 ]
 
 
 def products_home(request):
     context = {
-        'links_menu': links_menu
+        'links_menu': links_menu,
+        'title': 'Дом'
 
     }
     return render(request, 'mainapp/products.html', context=context)
@@ -45,23 +59,23 @@ def products_home(request):
 
 def products_office(request):
     context = {
-        'links_menu': links_menu
-
+        'links_menu': links_menu,
+        'title': 'Офис'
     }
     return render(request, 'mainapp/products.html', context=context)
 
 
 def products_modern(request):
     context = {
-        'links_menu': links_menu
-
+        'links_menu': links_menu,
+        'title': 'Модерн'
     }
     return render(request, 'mainapp/products.html', context=context)
 
 
 def products_classic(request):
     context = {
-        'links_menu': links_menu
-
+        'links_menu': links_menu,
+        'title': 'Классика'
     }
     return render(request, 'mainapp/products.html', context=context)
