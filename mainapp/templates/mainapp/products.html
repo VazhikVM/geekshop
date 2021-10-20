@@ -1,7 +1,6 @@
 {% extends 'mainapp/base.html' %}
 {% load static %}
 
-
 	{% block  menu %}
 		<div class="hero-white">
 			<div class="header clearfix">
@@ -13,15 +12,11 @@
                 <a href="#" class="basket"></a>
 			</div>
 		</div>
-	{% endblock  %}	
+	{% endblock  %}
 	{% block content %}
 		<div class="details">
 			<div class="links clearfix">
-				<ul class="links-menu">
-   				{%for item in links_menu%}
-					<li><a href="{% url item.url %}"{% if request.resolver_match.url_name == item.url %} class="active" {% endif %}> {{item.title}} </a></li>
-				{%endfor%}
-				</ul>
+			{% include 'mainapp/includes/inc_categories_menu.html' %}
 			</div>
 			
 			<div class="details-products">
@@ -31,7 +26,7 @@
 					</div>
 					<div class="slider-control">
 						<div class="block">
-							<a href="#"><img src={% static "img/controll.jpg"%} alt="">
+							<a href="#"><img src={% static 'img/controll.jpg' %} alt="">
 								<div class="text"></div>
 							</a>
 						</div>
@@ -41,7 +36,7 @@
 							</a>
 						</div>
 						<div class="block">
-							<a href="#"><img src={% static "img/controll2.jpg" %} alt="">
+							<a href="#"><img src= {% static 'img/controll2.jpg' %} alt="">
 								<div class="text"></div>
 							</a>
 						</div>
