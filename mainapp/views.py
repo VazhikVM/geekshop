@@ -7,10 +7,18 @@ import random
 # Create your views here.
 
 
+def get_hot_product():
+    return random.sample(list(Product.objects.all()), 1)[0]
+
+def get_same_products(hot_product):
+    product_list = Product.objects.filter(category=hot_product.category).exclude(pk=hot_product.pk)[:3]
+    return product_list
+
+
 def get_basket(user):
     if user.is_authenticated:
         return Basket.objects.filter(user=user)
-    return []
+    return None
 
 
 def index(request):
@@ -50,7 +58,7 @@ def products(request, pk=None):
         }
         return render(request, 'mainapp/products_list.html', context=context)
 
-    hot_product = random.sample(list(Product.objects.all()), 1)[0]
+    hot_product = get_hot_product()
     same_products = Product.objects.all()[3:6]
 
     context = {
@@ -62,3 +70,13 @@ def products(request, pk=None):
 
     }
     return render(request, 'mainapp/products.html', context=context)
+
+
+def product(request, pk):
+    link_menu = Product.objects.all()
+    context = {
+        'product': get_object_or_404(Product, pk=pk),
+        'basket': get_basket(request.user),
+        'link_menu': link_menu,
+    }
+    return render(request, 'mainapp/product.html', context)

@@ -39,7 +39,7 @@
 			<div class="tab-content">
 				{% for i in Product %}
 				<div class="block">
-					<a href="{%url "basket:add" i.pk%}"><img src="/media/{{ i.image }}" width="200"  alt="">
+					<a href="{% url 'products:product' i.pk %}"><img src="/media/{{ i.image }}" width="200"  alt="">
 						<div class="text">
 							<img src="{% static 'img/icon-hover.png'%}" alt="img">
 							<h4>{{ i.name }}</h4>
