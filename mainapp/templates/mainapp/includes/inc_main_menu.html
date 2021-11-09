@@ -12,6 +12,9 @@
         <li><a href="{% url 'auth:register' %}" >регистрация</a></li>
         <li><a href="{% url 'auth:login' %}" >Войти</a></li>
     {% endif %}
+    {% if user.is_superuser %}
+        <li><a href="{% url 'adminapp:user_list' %}" >админка</a></li>
+    {% endif %}
 </li>
 </ul>
 <a href="#" class="search"></a>
