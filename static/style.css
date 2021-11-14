@@ -93,6 +93,26 @@ html, body {
 	padding-left: 30px;
 }
 
+.category-products {
+    display: flex;
+
+    flex-wrap: wrap;
+
+}
+.pagination{
+    padding: 25px 0 25px 10px;
+}
+
+.block_1{
+    flex-basis: 150px;
+
+    margin: 35px;
+}
+.block_1__img{
+    width: 350px;
+    height: 350px;
+}
+
 .clearfix:after {
 	content: "";
 	display: block;
@@ -546,7 +566,7 @@ html, body {
 
 .footer {
 	height: 384px;
-	width: 1169px;
+	width: 1366px;;
 	background-color: #f7f7f7;
 	padding-left: 99px;
 	padding-right: 98px;
