@@ -14,6 +14,13 @@ class ProductCategory(models.Model):
         verbose_name_plural = 'Категории'
         ordering = ('-id',)
 
+    def delete(self):
+        if self.is_active:
+            self.is_active = False
+        else:
+            self.is_active = True
+        self.save()
+
 
 class Product(models.Model):
     category = models.ForeignKey(ProductCategory, on_delete=models.CASCADE, verbose_name='категория')
@@ -32,3 +39,10 @@ class Product(models.Model):
         verbose_name = 'Продукт'
         verbose_name_plural = 'Продукты'
         ordering = ('-id',)
+
+    def delete(self):
+        if self.is_active:
+            self.is_active = False
+        else:
+            self.is_active = True
+        self.save()
