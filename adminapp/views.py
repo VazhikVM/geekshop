@@ -70,14 +70,31 @@ class CategoryUpdateView(AccessMixin, UpdateView):
         return reverse('adminapp:category_list')
 
 
-# class CategoryDeleteView(AccessMixin, DeleteView):
-#     model = ProductCategory
-#     template_name = 'adminapp/category_delete.html'
-#
-#     def get_success_url(self):
-#         category_item = ProductCategory.objects.get(pk=self.kwargs['pk'])
-#         return reverse('adminapp:category_list', args=[category_item.pk])
+class CategoryDeleteView(AccessMixin, DeleteView):
+    model = ProductCategory
+    template_name = 'adminapp/category_delete.html'
+    fields = '__all__'
 
+    def get_success_url(self):
+        return reverse('adminapp:category_list')
+
+
+# @user_passes_test(lambda u: u.is_superuser)
+# def user_delete(request, pk):
+#     current_user = get_object_or_404(ShopUser, pk=pk)
+#
+#     if request.method == 'POST':
+#         if current_user.is_active:
+#             current_user.is_active = False
+#         else:
+#             current_user.is_active = True
+#         current_user.save()
+#         return HttpResponseRedirect(reverse('adminapp:user_list'))
+#
+#     context = {
+#         'object': current_user
+#     }
+#     return render(request, 'adminapp/user_delete.html', context)
 
 class ProductCreateView(AccessMixin, CreateView):
     model = Product

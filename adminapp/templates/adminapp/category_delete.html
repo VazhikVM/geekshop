@@ -3,7 +3,7 @@
 {% block content %}
     <div class="">
     {% if object.is_active %}
-        Уверены, что хотите удалить категорию {{ object.get_full_name }}?
+        Уверены, что хотите удалить категорию {{ object }}?
     {% else %}
         Уверены, что хотите восстановить категорию {{ object.get_full_name }}?
     {% endif %}
@@ -11,6 +11,6 @@
     <form method="post">
     {% csrf_token %}
     <input type="submit" class="btn btn-danger" value="уверен">
-    <a href="{% url 'adminapp:category_list' object.category.pk %}" class="btn btn-success">Нет</a>
+    <a href="{% url 'adminapp:category_list' %}" class="btn btn-success">Нет</a>
     </form>
 {% endblock %}
