@@ -1,0 +1,18 @@
+{% extends 'authapp/base.html' %}
+{% load static %}
+
+{% block name_page%}
+Добро пожаловать
+{% endblock %}
+
+{% block content %}
+
+    {% if user.is_authenticated %}
+        <h1>Поздравляем!</h1>
+        <p>Добро пожаловать в наш магазин</p>
+    {% else %}
+        <h1>Ошибка</h1>
+        <p>Обратитесь в поддержку</p>
+    {% endif %}
+
+{% endblock %}

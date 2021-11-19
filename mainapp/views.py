@@ -27,7 +27,6 @@ def index(request):
     context = {
         'title': 'Главная',
         'Product': Product.objects.all()[:4],
-        'basket': get_basket(request.user),
     }
     return render(request, 'mainapp/index.html', context=context)
 
@@ -35,7 +34,6 @@ def index(request):
 def contact(request):
     context = {
         'title': 'Контакты',
-        'basket': get_basket(request.user),
     }
     return render(request, 'mainapp/contact.html', context=context)
 
@@ -65,7 +63,6 @@ def products(request, pk=None, page=1):
             'title': 'Продукты',
             'category': category_item,
             'products': products_paginator,
-            'basket': get_basket(request.user),
         }
         return render(request, 'mainapp/products_list.html', context)
 
@@ -77,7 +74,6 @@ def products(request, pk=None, page=1):
         'title': 'Продукты',
         'hot_product': hot_product,
         'same_products': same_products,
-        'basket': get_basket(request.user),
 
     }
     return render(request, 'mainapp/products.html', context=context)
@@ -87,7 +83,6 @@ def product(request, pk):
     link_menu = Product.objects.all()
     context = {
         'product': get_object_or_404(Product, pk=pk),
-        'basket': get_basket(request.user),
         'link_menu': link_menu,
     }
     return render(request, 'mainapp/product.html', context)
