@@ -30,7 +30,7 @@ def save_user_profile(backend, user, response, *args, **kwargs):
         else:
             user.shopuserprofile.gender = ShopUserProfile.OTHERS
 
-    if 'bdate' is data_json:
+    if 'bdate' in data_json:
         birthday = datetime.strptime(data_json['bdate'], '%d.%m.%Y')
 
         age = datetime.now().year - birthday.year
