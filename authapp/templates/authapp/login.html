@@ -8,7 +8,9 @@
         {{ login_form.as_p }}
         <br>
         <input class="btn btn-primary" type="submit" value="войти">
+
+        <a href="{% url 'social:begin' 'vk-oauth2' %}?next=/"><img src="{% static 'img/vk.png' %}" alt="vk"></a><br>
+        <a href="{% url 'auth:register'  %}?next=/">Регистрация</a>
     </form>
 
 {% endblock %}
-
