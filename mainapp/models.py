@@ -40,7 +40,7 @@ class Product(models.Model):
         verbose_name_plural = 'Продукты'
         ordering = ('-id',)
 
-    def delete(self):
+    def delete(self, *args, **kwargs):
         if self.is_active:
             self.is_active = False
         else:
