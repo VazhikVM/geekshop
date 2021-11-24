@@ -26,6 +26,7 @@ class Order(models.Model):
 
     created_at = models.DateTimeField(auto_now_add=True)
     update_at = models.DateTimeField(auto_now=True)
+    is_active = models.BooleanField(default=True)
 
     def get_total_quantity(self):
         _items = self.orderitems.select_related()  # select_related() получаем все данные связанных моделей
@@ -34,6 +35,13 @@ class Order(models.Model):
     def get_total_cost(self):
         _items = self.orderitems.select_related()
         return sum(list(map(lambda x: x.product_post, _items)))
+
+    def delete(self, *args, **kwargs):
+        for item in self.orderitems.all():
+            item.product.quantity += item.quantity
+            item.product.save()
+        self.is_active = False
+        self.save()
 
 
 class OrderItem(models.Model):
