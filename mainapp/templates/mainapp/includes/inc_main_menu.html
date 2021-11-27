@@ -6,6 +6,7 @@
 
 <li>
     {% if user.is_authenticated %}
+        <li><a href="{% url 'ordersapp:list' %}" >Заказы</a></li>
         <li><a href="{% url 'auth:edit' %}" >{{ user.first_name|default:"Пользователь" }}</a></li>
         <li><a href="{% url 'auth:logout' %}" >Выйти</a></li>
     {% else%}

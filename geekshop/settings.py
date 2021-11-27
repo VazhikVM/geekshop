@@ -41,6 +41,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     'social_django',
     'adminapp',
+    'ordersapp',
     'authapp',
     'mainapp',
     'basketapp',
