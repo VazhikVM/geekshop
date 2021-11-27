@@ -38,8 +38,8 @@ class OrderCreateView(CreateView):
                 for num, form in enumerate(formset.forms):
                     form.initial['product'] = basket_items[num].product  # присваеваем значение продукта заказу из карзинки
                     form.initial['quantity'] = basket_items[num].quantity
-                    form.initial['price'] = basket_items[num].price
-                    form.initial['image'] = basket_items[num].image
+                    form.initial['price'] = basket_items[num].product.price
+                    form.initial['image'] = basket_items[num].product.image
             else:
                 formset = OrderFormSet()
 
