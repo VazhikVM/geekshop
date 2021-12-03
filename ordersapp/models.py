@@ -36,12 +36,12 @@ class Order(models.Model):
         _items = self.orderitems.select_related()
         return sum(list(map(lambda x: x.product_post, _items)))
 
-    def delete(self, *args, **kwargs):
-        for item in self.orderitems.all():
-            item.product.quantity += item.quantity
-            item.product.save()
-        self.is_active = False
-        self.save()
+    # def delete(self, *args, **kwargs):
+    #     for item in self.orderitems.all():
+    #         item.product.quantity += item.quantity
+    #         item.product.save()
+    #     self.is_active = False
+    #     self.save()
 
 
 class OrderItem(models.Model):
@@ -56,3 +56,7 @@ class OrderItem(models.Model):
     @property
     def product_post(self):
         return self.product.price * self.quantity
+
+    @staticmethod
+    def get_item(pk):
+        return OrderItem.objects.get(pk=pk)
