@@ -1,0 +1,975 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<root>
+	<0>
+		<model>auth.permission</model>
+		<pk>1</pk>
+		<fields>
+			<name>Can add log entry</name>
+			<content_type>1</content_type>
+			<codename>add_logentry</codename>
+		</fields>
+	</0>
+	<1>
+		<model>auth.permission</model>
+		<pk>2</pk>
+		<fields>
+			<name>Can change log entry</name>
+			<content_type>1</content_type>
+			<codename>change_logentry</codename>
+		</fields>
+	</1>
+	<2>
+		<model>auth.permission</model>
+		<pk>3</pk>
+		<fields>
+			<name>Can delete log entry</name>
+			<content_type>1</content_type>
+			<codename>delete_logentry</codename>
+		</fields>
+	</2>
+	<3>
+		<model>auth.permission</model>
+		<pk>4</pk>
+		<fields>
+			<name>Can view log entry</name>
+			<content_type>1</content_type>
+			<codename>view_logentry</codename>
+		</fields>
+	</3>
+	<4>
+		<model>auth.permission</model>
+		<pk>5</pk>
+		<fields>
+			<name>Can add permission</name>
+			<content_type>2</content_type>
+			<codename>add_permission</codename>
+		</fields>
+	</4>
+	<5>
+		<model>auth.permission</model>
+		<pk>6</pk>
+		<fields>
+			<name>Can change permission</name>
+			<content_type>2</content_type>
+			<codename>change_permission</codename>
+		</fields>
+	</5>
+	<6>
+		<model>auth.permission</model>
+		<pk>7</pk>
+		<fields>
+			<name>Can delete permission</name>
+			<content_type>2</content_type>
+			<codename>delete_permission</codename>
+		</fields>
+	</6>
+	<7>
+		<model>auth.permission</model>
+		<pk>8</pk>
+		<fields>
+			<name>Can view permission</name>
+			<content_type>2</content_type>
+			<codename>view_permission</codename>
+		</fields>
+	</7>
+	<8>
+		<model>auth.permission</model>
+		<pk>9</pk>
+		<fields>
+			<name>Can add group</name>
+			<content_type>3</content_type>
+			<codename>add_group</codename>
+		</fields>
+	</8>
+	<9>
+		<model>auth.permission</model>
+		<pk>10</pk>
+		<fields>
+			<name>Can change group</name>
+			<content_type>3</content_type>
+			<codename>change_group</codename>
+		</fields>
+	</9>
+	<10>
+		<model>auth.permission</model>
+		<pk>11</pk>
+		<fields>
+			<name>Can delete group</name>
+			<content_type>3</content_type>
+			<codename>delete_group</codename>
+		</fields>
+	</10>
+	<11>
+		<model>auth.permission</model>
+		<pk>12</pk>
+		<fields>
+			<name>Can view group</name>
+			<content_type>3</content_type>
+			<codename>view_group</codename>
+		</fields>
+	</11>
+	<12>
+		<model>auth.permission</model>
+		<pk>13</pk>
+		<fields>
+			<name>Can add content type</name>
+			<content_type>4</content_type>
+			<codename>add_contenttype</codename>
+		</fields>
+	</12>
+	<13>
+		<model>auth.permission</model>
+		<pk>14</pk>
+		<fields>
+			<name>Can change content type</name>
+			<content_type>4</content_type>
+			<codename>change_contenttype</codename>
+		</fields>
+	</13>
+	<14>
+		<model>auth.permission</model>
+		<pk>15</pk>
+		<fields>
+			<name>Can delete content type</name>
+			<content_type>4</content_type>
+			<codename>delete_contenttype</codename>
+		</fields>
+	</14>
+	<15>
+		<model>auth.permission</model>
+		<pk>16</pk>
+		<fields>
+			<name>Can view content type</name>
+			<content_type>4</content_type>
+			<codename>view_contenttype</codename>
+		</fields>
+	</15>
+	<16>
+		<model>auth.permission</model>
+		<pk>17</pk>
+		<fields>
+			<name>Can add session</name>
+			<content_type>5</content_type>
+			<codename>add_session</codename>
+		</fields>
+	</16>
+	<17>
+		<model>auth.permission</model>
+		<pk>18</pk>
+		<fields>
+			<name>Can change session</name>
+			<content_type>5</content_type>
+			<codename>change_session</codename>
+		</fields>
+	</17>
+	<18>
+		<model>auth.permission</model>
+		<pk>19</pk>
+		<fields>
+			<name>Can delete session</name>
+			<content_type>5</content_type>
+			<codename>delete_session</codename>
+		</fields>
+	</18>
+	<19>
+		<model>auth.permission</model>
+		<pk>20</pk>
+		<fields>
+			<name>Can view session</name>
+			<content_type>5</content_type>
+			<codename>view_session</codename>
+		</fields>
+	</19>
+	<20>
+		<model>auth.permission</model>
+		<pk>21</pk>
+		<fields>
+			<name>Can add association</name>
+			<content_type>6</content_type>
+			<codename>add_association</codename>
+		</fields>
+	</20>
+	<21>
+		<model>auth.permission</model>
+		<pk>22</pk>
+		<fields>
+			<name>Can change association</name>
+			<content_type>6</content_type>
+			<codename>change_association</codename>
+		</fields>
+	</21>
+	<22>
+		<model>auth.permission</model>
+		<pk>23</pk>
+		<fields>
+			<name>Can delete association</name>
+			<content_type>6</content_type>
+			<codename>delete_association</codename>
+		</fields>
+	</22>
+	<23>
+		<model>auth.permission</model>
+		<pk>24</pk>
+		<fields>
+			<name>Can view association</name>
+			<content_type>6</content_type>
+			<codename>view_association</codename>
+		</fields>
+	</23>
+	<24>
+		<model>auth.permission</model>
+		<pk>25</pk>
+		<fields>
+			<name>Can add code</name>
+			<content_type>7</content_type>
+			<codename>add_code</codename>
+		</fields>
+	</24>
+	<25>
+		<model>auth.permission</model>
+		<pk>26</pk>
+		<fields>
+			<name>Can change code</name>
+			<content_type>7</content_type>
+			<codename>change_code</codename>
+		</fields>
+	</25>
+	<26>
+		<model>auth.permission</model>
+		<pk>27</pk>
+		<fields>
+			<name>Can delete code</name>
+			<content_type>7</content_type>
+			<codename>delete_code</codename>
+		</fields>
+	</26>
+	<27>
+		<model>auth.permission</model>
+		<pk>28</pk>
+		<fields>
+			<name>Can view code</name>
+			<content_type>7</content_type>
+			<codename>view_code</codename>
+		</fields>
+	</27>
+	<28>
+		<model>auth.permission</model>
+		<pk>29</pk>
+		<fields>
+			<name>Can add nonce</name>
+			<content_type>8</content_type>
+			<codename>add_nonce</codename>
+		</fields>
+	</28>
+	<29>
+		<model>auth.permission</model>
+		<pk>30</pk>
+		<fields>
+			<name>Can change nonce</name>
+			<content_type>8</content_type>
+			<codename>change_nonce</codename>
+		</fields>
+	</29>
+	<30>
+		<model>auth.permission</model>
+		<pk>31</pk>
+		<fields>
+			<name>Can delete nonce</name>
+			<content_type>8</content_type>
+			<codename>delete_nonce</codename>
+		</fields>
+	</30>
+	<31>
+		<model>auth.permission</model>
+		<pk>32</pk>
+		<fields>
+			<name>Can view nonce</name>
+			<content_type>8</content_type>
+			<codename>view_nonce</codename>
+		</fields>
+	</31>
+	<32>
+		<model>auth.permission</model>
+		<pk>33</pk>
+		<fields>
+			<name>Can add user social auth</name>
+			<content_type>9</content_type>
+			<codename>add_usersocialauth</codename>
+		</fields>
+	</32>
+	<33>
+		<model>auth.permission</model>
+		<pk>34</pk>
+		<fields>
+			<name>Can change user social auth</name>
+			<content_type>9</content_type>
+			<codename>change_usersocialauth</codename>
+		</fields>
+	</33>
+	<34>
+		<model>auth.permission</model>
+		<pk>35</pk>
+		<fields>
+			<name>Can delete user social auth</name>
+			<content_type>9</content_type>
+			<codename>delete_usersocialauth</codename>
+		</fields>
+	</34>
+	<35>
+		<model>auth.permission</model>
+		<pk>36</pk>
+		<fields>
+			<name>Can view user social auth</name>
+			<content_type>9</content_type>
+			<codename>view_usersocialauth</codename>
+		</fields>
+	</35>
+	<36>
+		<model>auth.permission</model>
+		<pk>37</pk>
+		<fields>
+			<name>Can add partial</name>
+			<content_type>10</content_type>
+			<codename>add_partial</codename>
+		</fields>
+	</36>
+	<37>
+		<model>auth.permission</model>
+		<pk>38</pk>
+		<fields>
+			<name>Can change partial</name>
+			<content_type>10</content_type>
+			<codename>change_partial</codename>
+		</fields>
+	</37>
+	<38>
+		<model>auth.permission</model>
+		<pk>39</pk>
+		<fields>
+			<name>Can delete partial</name>
+			<content_type>10</content_type>
+			<codename>delete_partial</codename>
+		</fields>
+	</38>
+	<39>
+		<model>auth.permission</model>
+		<pk>40</pk>
+		<fields>
+			<name>Can view partial</name>
+			<content_type>10</content_type>
+			<codename>view_partial</codename>
+		</fields>
+	</39>
+	<40>
+		<model>auth.permission</model>
+		<pk>41</pk>
+		<fields>
+			<name>Can add user</name>
+			<content_type>11</content_type>
+			<codename>add_shopuser</codename>
+		</fields>
+	</40>
+	<41>
+		<model>auth.permission</model>
+		<pk>42</pk>
+		<fields>
+			<name>Can change user</name>
+			<content_type>11</content_type>
+			<codename>change_shopuser</codename>
+		</fields>
+	</41>
+	<42>
+		<model>auth.permission</model>
+		<pk>43</pk>
+		<fields>
+			<name>Can delete user</name>
+			<content_type>11</content_type>
+			<codename>delete_shopuser</codename>
+		</fields>
+	</42>
+	<43>
+		<model>auth.permission</model>
+		<pk>44</pk>
+		<fields>
+			<name>Can view user</name>
+			<content_type>11</content_type>
+			<codename>view_shopuser</codename>
+		</fields>
+	</43>
+	<44>
+		<model>auth.permission</model>
+		<pk>45</pk>
+		<fields>
+			<name>Can add shop user profile</name>
+			<content_type>12</content_type>
+			<codename>add_shopuserprofile</codename>
+		</fields>
+	</44>
+	<45>
+		<model>auth.permission</model>
+		<pk>46</pk>
+		<fields>
+			<name>Can change shop user profile</name>
+			<content_type>12</content_type>
+			<codename>change_shopuserprofile</codename>
+		</fields>
+	</45>
+	<46>
+		<model>auth.permission</model>
+		<pk>47</pk>
+		<fields>
+			<name>Can delete shop user profile</name>
+			<content_type>12</content_type>
+			<codename>delete_shopuserprofile</codename>
+		</fields>
+	</46>
+	<47>
+		<model>auth.permission</model>
+		<pk>48</pk>
+		<fields>
+			<name>Can view shop user profile</name>
+			<content_type>12</content_type>
+			<codename>view_shopuserprofile</codename>
+		</fields>
+	</47>
+	<48>
+		<model>auth.permission</model>
+		<pk>49</pk>
+		<fields>
+			<name>Can add Категория</name>
+			<content_type>13</content_type>
+			<codename>add_productcategory</codename>
+		</fields>
+	</48>
+	<49>
+		<model>auth.permission</model>
+		<pk>50</pk>
+		<fields>
+			<name>Can change Категория</name>
+			<content_type>13</content_type>
+			<codename>change_productcategory</codename>
+		</fields>
+	</49>
+	<50>
+		<model>auth.permission</model>
+		<pk>51</pk>
+		<fields>
+			<name>Can delete Категория</name>
+			<content_type>13</content_type>
+			<codename>delete_productcategory</codename>
+		</fields>
+	</50>
+	<51>
+		<model>auth.permission</model>
+		<pk>52</pk>
+		<fields>
+			<name>Can view Категория</name>
+			<content_type>13</content_type>
+			<codename>view_productcategory</codename>
+		</fields>
+	</51>
+	<52>
+		<model>auth.permission</model>
+		<pk>53</pk>
+		<fields>
+			<name>Can add Продукт</name>
+			<content_type>14</content_type>
+			<codename>add_product</codename>
+		</fields>
+	</52>
+	<53>
+		<model>auth.permission</model>
+		<pk>54</pk>
+		<fields>
+			<name>Can change Продукт</name>
+			<content_type>14</content_type>
+			<codename>change_product</codename>
+		</fields>
+	</53>
+	<54>
+		<model>auth.permission</model>
+		<pk>55</pk>
+		<fields>
+			<name>Can delete Продукт</name>
+			<content_type>14</content_type>
+			<codename>delete_product</codename>
+		</fields>
+	</54>
+	<55>
+		<model>auth.permission</model>
+		<pk>56</pk>
+		<fields>
+			<name>Can view Продукт</name>
+			<content_type>14</content_type>
+			<codename>view_product</codename>
+		</fields>
+	</55>
+	<56>
+		<model>auth.permission</model>
+		<pk>57</pk>
+		<fields>
+			<name>Can add basket</name>
+			<content_type>15</content_type>
+			<codename>add_basket</codename>
+		</fields>
+	</56>
+	<57>
+		<model>auth.permission</model>
+		<pk>58</pk>
+		<fields>
+			<name>Can change basket</name>
+			<content_type>15</content_type>
+			<codename>change_basket</codename>
+		</fields>
+	</57>
+	<58>
+		<model>auth.permission</model>
+		<pk>59</pk>
+		<fields>
+			<name>Can delete basket</name>
+			<content_type>15</content_type>
+			<codename>delete_basket</codename>
+		</fields>
+	</58>
+	<59>
+		<model>auth.permission</model>
+		<pk>60</pk>
+		<fields>
+			<name>Can view basket</name>
+			<content_type>15</content_type>
+			<codename>view_basket</codename>
+		</fields>
+	</59>
+	<60>
+		<model>auth.permission</model>
+		<pk>61</pk>
+		<fields>
+			<name>Can add Продукт</name>
+			<content_type>16</content_type>
+			<codename>add_orderitem</codename>
+		</fields>
+	</60>
+	<61>
+		<model>auth.permission</model>
+		<pk>62</pk>
+		<fields>
+			<name>Can change Продукт</name>
+			<content_type>16</content_type>
+			<codename>change_orderitem</codename>
+		</fields>
+	</61>
+	<62>
+		<model>auth.permission</model>
+		<pk>63</pk>
+		<fields>
+			<name>Can delete Продукт</name>
+			<content_type>16</content_type>
+			<codename>delete_orderitem</codename>
+		</fields>
+	</62>
+	<63>
+		<model>auth.permission</model>
+		<pk>64</pk>
+		<fields>
+			<name>Can view Продукт</name>
+			<content_type>16</content_type>
+			<codename>view_orderitem</codename>
+		</fields>
+	</63>
+	<64>
+		<model>auth.permission</model>
+		<pk>65</pk>
+		<fields>
+			<name>Can add order</name>
+			<content_type>17</content_type>
+			<codename>add_order</codename>
+		</fields>
+	</64>
+	<65>
+		<model>auth.permission</model>
+		<pk>66</pk>
+		<fields>
+			<name>Can change order</name>
+			<content_type>17</content_type>
+			<codename>change_order</codename>
+		</fields>
+	</65>
+	<66>
+		<model>auth.permission</model>
+		<pk>67</pk>
+		<fields>
+			<name>Can delete order</name>
+			<content_type>17</content_type>
+			<codename>delete_order</codename>
+		</fields>
+	</66>
+	<67>
+		<model>auth.permission</model>
+		<pk>68</pk>
+		<fields>
+			<name>Can view order</name>
+			<content_type>17</content_type>
+			<codename>view_order</codename>
+		</fields>
+	</67>
+	<68>
+		<model>sessions.session</model>
+		<pk>5l9t3o4v1kxeu4afa52ngee8eh7sj2ni</pk>
+		<fields>
+			<session_data>.eJxVjL0OgjAURt-ls2kutRTq6M4zNPevghpIKEzGd9cmDLp8w3dOzssk3Lcx7UXXNIm5GGdOvx8hP3SuQO443xbLy7ytE9mq2IMWOyyiz-vh_gVGLGPNtiyRvHoG4MAufqdRdLmX3Lrc9aCdgBBlcEBOGzxjzCEwBM-ae_P-AAV6OOQ:1mqvtp:KIfVeLJIQi2AYMFgLIN_gidHVTUvuydUO4Z02nVysug</session_data>
+			<expire_date>2021-12-11T11:29:45.078Z</expire_date>
+		</fields>
+	</68>
+	<69>
+		<model>sessions.session</model>
+		<pk>e5ecksyos5nh98f5xwptr0k4yt8i4i8k</pk>
+		<fields>
+			<session_data>.eJxVjL0OgjAURt-ls2kutRTq6M4zNPevghpIKEzGd9cmDLp8w3dOzssk3Lcx7UXXNIm5GGdOvx8hP3SuQO443xbLy7ytE9mq2IMWOyyiz-vh_gVGLGPNtiyRvHoG4MAufqdRdLmX3Lrc9aCdgBBlcEBOGzxjzCEwBM-ae_P-AAV6OOQ:1mplQb:8dxhFUxVwtN8aEPq98X8vJhvfv81tKk1zYyRT0B9UrI</session_data>
+			<expire_date>2021-12-08T06:06:45.761Z</expire_date>
+		</fields>
+	</69>
+	<70>
+		<model>sessions.session</model>
+		<pk>o2kjhvm32o4y777ud2grmatixli3d51v</pk>
+		<fields>
+			<session_data>.eJxVjL0OgjAURt-ls2kutRTq6M4zNPevghpIKEzGd9cmDLp8w3dOzssk3Lcx7UXXNIm5GGdOvx8hP3SuQO443xbLy7ytE9mq2IMWOyyiz-vh_gVGLGPNtiyRvHoG4MAufqdRdLmX3Lrc9aCdgBBlcEBOGzxjzCEwBM-ae_P-AAV6OOQ:1mquov:H8yhLSCD154ocv5hBqzwv7x4Hoc3SRSfLSpJzWbBupw</session_data>
+			<expire_date>2021-12-11T10:20:37.528Z</expire_date>
+		</fields>
+	</70>
+	<71>
+		<model>social_django.usersocialauth</model>
+		<pk>1</pk>
+		<fields>
+			<user>1</user>
+			<provider>vk-oauth2</provider>
+			<uid>242511590</uid>
+			<extra_data>{"auth_time": 1637509973, "id": 242511590, "expires": 86400, "access_token": "69848a246308fe4a1587f80fa15c132e7ddc970b0e4f41d39982b193147ae548dca96c5d6c51e483c7249", "token_type": null}</extra_data>
+			<created>2021-11-21T10:25:36.596Z</created>
+			<modified>2021-11-21T15:52:53.379Z</modified>
+		</fields>
+	</71>
+	<72>
+		<model>ordersapp.order</model>
+		<pk>3</pk>
+		<fields>
+			<user>2</user>
+			<status>STP</status>
+			<created_at>2021-11-24T18:07:35.674Z</created_at>
+			<update_at>2021-11-24T18:42:22.745Z</update_at>
+			<is_active>true</is_active>
+		</fields>
+	</72>
+	<73>
+		<model>ordersapp.order</model>
+		<pk>4</pk>
+		<fields>
+			<user>2</user>
+			<status>STP</status>
+			<created_at>2021-11-24T18:34:07.306Z</created_at>
+			<update_at>2021-11-24T18:42:17.407Z</update_at>
+			<is_active>true</is_active>
+		</fields>
+	</73>
+	<74>
+		<model>ordersapp.order</model>
+		<pk>5</pk>
+		<fields>
+			<user>2</user>
+			<status>FM</status>
+			<created_at>2021-11-27T08:55:12.654Z</created_at>
+			<update_at>2021-11-29T17:11:14.639Z</update_at>
+			<is_active>true</is_active>
+		</fields>
+	</74>
+	<75>
+		<model>ordersapp.orderitem</model>
+		<pk>7</pk>
+		<fields>
+			<order>3</order>
+			<product>1</product>
+			<quantity>1</quantity>
+		</fields>
+	</75>
+	<76>
+		<model>ordersapp.orderitem</model>
+		<pk>8</pk>
+		<fields>
+			<order>3</order>
+			<product>6</product>
+			<quantity>1</quantity>
+		</fields>
+	</76>
+	<77>
+		<model>ordersapp.orderitem</model>
+		<pk>9</pk>
+		<fields>
+			<order>3</order>
+			<product>3</product>
+			<quantity>1</quantity>
+		</fields>
+	</77>
+	<78>
+		<model>ordersapp.orderitem</model>
+		<pk>10</pk>
+		<fields>
+			<order>4</order>
+			<product>1</product>
+			<quantity>1</quantity>
+		</fields>
+	</78>
+	<79>
+		<model>ordersapp.orderitem</model>
+		<pk>11</pk>
+		<fields>
+			<order>4</order>
+			<product>6</product>
+			<quantity>1</quantity>
+		</fields>
+	</79>
+	<80>
+		<model>ordersapp.orderitem</model>
+		<pk>12</pk>
+		<fields>
+			<order>4</order>
+			<product>3</product>
+			<quantity>1</quantity>
+		</fields>
+	</80>
+	<81>
+		<model>ordersapp.orderitem</model>
+		<pk>13</pk>
+		<fields>
+			<order>5</order>
+			<product>1</product>
+			<quantity>1</quantity>
+		</fields>
+	</81>
+	<82>
+		<model>authapp.shopuser</model>
+		<pk>1</pk>
+		<fields>
+			<password>!UDZLj2hIDsapq4i3XIvlraBjkQ3cTDhYc51limXq</password>
+			<last_login>2021-11-21T15:52:53.712Z</last_login>
+			<is_superuser>false</is_superuser>
+			<username>vazhik_vm</username>
+			<first_name>Виталий</first_name>
+			<last_name>Важинский</last_name>
+			<email></email>
+			<is_staff>false</is_staff>
+			<is_active>true</is_active>
+			<date_joined>2021-11-21T10:25:36.102Z</date_joined>
+			<avatar>user_avatar/vazhik_vm.jpg</avatar>
+			<age>31</age>
+			<activate_key />
+			<activate_key_expired />
+		</fields>
+	</82>
+	<83>
+		<model>authapp.shopuser</model>
+		<pk>2</pk>
+		<fields>
+			<password>pbkdf2_sha256$260000$zl58HedBs2kN4e4J25Syyw$MICbfv1YlakN0aCii1NLJxv/jzbQv/rafxL8xkAZuuM=</password>
+			<last_login>2021-11-27T11:29:44.852Z</last_login>
+			<is_superuser>true</is_superuser>
+			<username>django</username>
+			<first_name></first_name>
+			<last_name></last_name>
+			<email></email>
+			<is_staff>true</is_staff>
+			<is_active>true</is_active>
+			<date_joined>2021-11-21T12:05:22.307Z</date_joined>
+			<avatar></avatar>
+			<age />
+			<activate_key />
+			<activate_key_expired />
+		</fields>
+	</83>
+	<84>
+		<model>authapp.shopuserprofile</model>
+		<pk>1</pk>
+		<fields>
+			<user>1</user>
+			<tagline></tagline>
+			<about_me></about_me>
+			<gender>М</gender>
+		</fields>
+	</84>
+	<85>
+		<model>authapp.shopuserprofile</model>
+		<pk>2</pk>
+		<fields>
+			<user>2</user>
+			<tagline></tagline>
+			<about_me></about_me>
+			<gender>О</gender>
+		</fields>
+	</85>
+	<86>
+		<model>mainapp.productcategory</model>
+		<pk>1</pk>
+		<fields>
+			<name>дом</name>
+			<description>Товары для обстановки жилого помещения</description>
+			<is_active>true</is_active>
+		</fields>
+	</86>
+	<87>
+		<model>mainapp.productcategory</model>
+		<pk>2</pk>
+		<fields>
+			<name>офис</name>
+			<description>Товары для обстановки офисных помещеный</description>
+			<is_active>true</is_active>
+		</fields>
+	</87>
+	<88>
+		<model>mainapp.productcategory</model>
+		<pk>3</pk>
+		<fields>
+			<name>классика</name>
+			<description>Товары для обстановке помещений в классическом стиле</description>
+			<is_active>true</is_active>
+		</fields>
+	</88>
+	<89>
+		<model>mainapp.productcategory</model>
+		<pk>4</pk>
+		<fields>
+			<name>модерн</name>
+			<description>Товары для обстановке помещений в стиле модерн</description>
+			<is_active>true</is_active>
+		</fields>
+	</89>
+	<90>
+		<model>mainapp.product</model>
+		<pk>1</pk>
+		<fields>
+			<category>1</category>
+			<name>стол</name>
+			<image>product/product-1.jpg</image>
+			<short_desc>стол обеденный</short_desc>
+			<description>обеденный слол для кухни</description>
+			<price>1500.00</price>
+			<quantity>24</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</90>
+	<91>
+		<model>mainapp.product</model>
+		<pk>2</pk>
+		<fields>
+			<category>1</category>
+			<name>кресло</name>
+			<image>product/product-2.jpg</image>
+			<short_desc>Кресло для гостинной</short_desc>
+			<description>Кресло для гостинной ракладывающеся</description>
+			<price>17500.00</price>
+			<quantity>8</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</91>
+	<92>
+		<model>mainapp.product</model>
+		<pk>3</pk>
+		<fields>
+			<category>2</category>
+			<name>Стол</name>
+			<image>product/product-3.jpg</image>
+			<short_desc>стол для персонала</short_desc>
+			<description>Стол для персонала обыкновенный 60 * 80</description>
+			<price>2000.00</price>
+			<quantity>12</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</92>
+	<93>
+		<model>mainapp.product</model>
+		<pk>4</pk>
+		<fields>
+			<category>2</category>
+			<name>стул</name>
+			<image>product/product-4.jpg</image>
+			<short_desc>стул для руководителя</short_desc>
+			<description>стул раскладной с высокой спинкой</description>
+			<price>10000.00</price>
+			<quantity>7</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</93>
+	<94>
+		<model>mainapp.product</model>
+		<pk>5</pk>
+		<fields>
+			<category>3</category>
+			<name>пианино</name>
+			<image>product/product-11.jpg</image>
+			<short_desc>пианино обыкновенное</short_desc>
+			<description>Классическое пианино к оригинальным звучанием</description>
+			<price>213.00</price>
+			<quantity>32</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</94>
+	<95>
+		<model>mainapp.product</model>
+		<pk>6</pk>
+		<fields>
+			<category>3</category>
+			<name>стол</name>
+			<image>product/product-21.jpg</image>
+			<short_desc>стол классический</short_desc>
+			<description>стол классический для гостинной со знаком иньянь</description>
+			<price>100000.00</price>
+			<quantity>11</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</95>
+	<96>
+		<model>mainapp.product</model>
+		<pk>7</pk>
+		<fields>
+			<category>4</category>
+			<name>картина</name>
+			<image>product/product-31.jpg</image>
+			<short_desc>картина в пикассо</short_desc>
+			<description>Современная картина в стиле пикассо</description>
+			<price>5455.00</price>
+			<quantity>32</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</96>
+	<97>
+		<model>mainapp.product</model>
+		<pk>8</pk>
+		<fields>
+			<category>4</category>
+			<name>стол</name>
+			<image>product/product-14.jpg</image>
+			<short_desc>крутой современный стол</short_desc>
+			<description>крутой современный стол для обеда</description>
+			<price>32000.00</price>
+			<quantity>1</quantity>
+			<is_active>true</is_active>
+		</fields>
+	</97>
+	<98>
+		<model>basketapp.basket</model>
+		<pk>5</pk>
+		<fields>
+			<user>2</user>
+			<product>2</product>
+			<quantity>3</quantity>
+			<add_datetime>2021-11-27T10:12:30.778Z</add_datetime>
+		</fields>
+	</98>
+	<99>
+		<model>basketapp.basket</model>
+		<pk>6</pk>
+		<fields>
+			<user>2</user>
+			<product>8</product>
+			<quantity>1</quantity>
+			<add_datetime>2021-11-27T10:28:48.661Z</add_datetime>
+		</fields>
+	</99>
+</root>
