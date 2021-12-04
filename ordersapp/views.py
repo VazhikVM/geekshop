@@ -1,5 +1,6 @@
 from django.db import transaction
 from django.forms import inlineformset_factory
+from django.http import JsonResponse
 from django.shortcuts import render, HttpResponseRedirect, reverse
 from django.urls import reverse_lazy
 from django.views.generic import ListView, DetailView, DeleteView, UpdateView, CreateView
@@ -131,3 +132,19 @@ def product_quantity_update_save(sender, instance, **kwargs):
 def product_quantity_update_delete(sender, instance, **kwargs):
     instance.product.quantity += instance.quantity
     instance.product.save()
+
+
+def get_product_price(request, pk):
+    if request.is_ajax():
+        product_item = Product.objects.filter(pk=pk).first()
+        if product_item:
+            return JsonResponse({'price': product_item.price})
+        return JsonResponse({'price': 0})
+
+
+# def get_product_img(request, pk):
+#     if request.is_ajax():
+#         product_item = Product.objects.filter(pk=pk).first()
+#         if product_item:
+#             return JsonResponse({'image': product_item.image})
+#         return JsonResponse({'image': ''})

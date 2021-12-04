@@ -59,7 +59,45 @@ window.onload = function (){
 
     $('.order_form').on('change', 'select', function() {
         var target = event.target;
-        console.log(target.value);
+        orderitem_num = parseInt(target.name.replace('orderitems-', '').replace('-quantity', ''));
+        var product_id = target.options[target.selectedIndex].value;
+        if (product_id){
+           $.ajax({
+               url:'/order/product/price/' + product_id + '/',
+               success:function (data) {
+                if (data.price){
+                    price_arr[orderitem_num] = data.price;
+                    if(isNaN(quantity_arr[orderitem_num])) {
+                        quantity_arr[orderitem_num] = 0;
+                    }
+                    var price_string = '<span>' + data.price.toString().replace('.', ',') + 'руб.' + '</span>'
+                    var current_tr = $('.order_form table').find('tr:eq(' + (orderitem_num + 1) + ')');
+                    current_tr.find('td:eq(2)').html(price_string);
+
+                }
+               }
+
+
+        });
+
+
+           // $.ajax({
+           //     url: '/media/product/' + product_id + '/',
+           //     // http://localhost:8000/media/product/product-1.jpg
+           //
+           //     success: function (data) {
+           //         if (data.image) {
+           //             console.log(data.image)
+           //             price_arr[orderitem_num] = data.image
+           //             var image_string = '<img style="width: 40px" src="/media/' + data.image.toString() + '" alt=""'
+           //             var current_tr_img = $('.order_form table').find('tr:eq(' + (orderitem_num + 1) + ')');
+           //             current_tr_img.find('td:eq(3)').html(image_string);
+           //         }
+           //     }
+           // });
+        };
+
+
     });
 
     function delete_order_item(row) {
