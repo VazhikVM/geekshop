@@ -10,7 +10,7 @@ from django.core.cache import cache
 
 def get_product():
     if settings.LOW_CACHE:
-        key = 'product'
+        key = 'products'
         links_product = cache.get(key)
 
         if links_product is None:
