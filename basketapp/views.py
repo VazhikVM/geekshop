@@ -6,6 +6,9 @@ from django.contrib.auth.decorators import login_required
 from django.template.loader import render_to_string
 
 
+
+
+
 @login_required
 def basket(request):
     basket_list = Basket.objects.filter(user=request.user).select_related()
