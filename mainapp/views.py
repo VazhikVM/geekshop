@@ -6,6 +6,7 @@ from django.core.paginator import Paginator, EmptyPage, PageNotAnInteger
 import random
 from django.conf import settings
 from django.core.cache import cache
+from django.db.models import Q
 
 
 def get_product():
@@ -50,7 +51,9 @@ def get_basket(user):
 def index(request):
     context = {
         'title': 'Главная',
-        'Product': get_product()[:4],
+        'Product': Product.objects.filter(
+            Q(category__name='дом') | Q(category__name='офис')
+        ),
     }
     return render(request, 'mainapp/index.html', context=context)
 

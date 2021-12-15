@@ -1,12 +1,13 @@
 from django.shortcuts import render, get_object_or_404, HttpResponseRedirect
-from django.urls import reverse
-from adminapp.forms import ShopUserAdminEditForm, ProductEditForm
+from django.urls import reverse, reverse_lazy
+from adminapp.forms import ShopUserAdminEditForm, ProductEditForm, ProductCategoryEditForm
 from authapp.forms import ShopUserRegisterForm, ShopUserEditForm
 from authapp.models import ShopUser
 from mainapp.models import ProductCategory, Product
 from django.contrib.auth.decorators import user_passes_test
 from django.views.generic import ListView, DetailView, DeleteView, CreateView, UpdateView
 from django.utils.decorators import method_decorator
+from django.db.models import F
 
 
 class AccessMixin:
@@ -63,11 +64,18 @@ class CategoryListView(AccessMixin, ListView):
 
 class CategoryUpdateView(AccessMixin, UpdateView):
     model = ProductCategory
+    form_class = ProductCategoryEditForm
     template_name = 'adminapp/category_form.html'
-    fields = '__all__'
+    success_url = reverse_lazy('adminapp:category_list')
 
-    def get_success_url(self):
-        return reverse('adminapp:category_list')
+    def form_valid(self, form):
+        if 'discount' in form.cleaned_data:
+            discount = form.cleaned_data.get('discount')
+            if discount:
+                self.object.product_set.update(
+                    price=F('price') * (1 - discount/100)
+                )
+        return super().form_valid(form)
 
 
 class CategoryDeleteView(AccessMixin, DeleteView):
