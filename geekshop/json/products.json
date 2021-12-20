@@ -1,74 +1,9 @@
-[
-  {
-    "category": "дом",
-    "name":"стол",
-    "image": "product/product-1.jpg",
-    "short_desc":"стол обеденный",
-    "description": "обеденный слол для кухни",
-    "price":"1500",
-    "quantity": "23"
-  },
-   {
-    "category": "дом",
-    "name":"кресло",
-    "image": "product/product-2.jpg",
-    "short_desc":"Кресло для гостинной",
-    "description": "Кресло для гостинной ракладывающеся",
-    "price":"17500",
-    "quantity": "11"
-  },
-   {
-    "category": "офис",
-    "name":"Стол",
-    "image": "product/product-3.jpg",
-    "short_desc":"стол для персонала",
-    "description": "Стол для персонала обыкновенный 60 * 80",
-    "price":"2000",
-    "quantity": "6"
-  },
-     {
-    "category": "офис",
-    "name":"стул",
-    "image": "product/product-4.jpg",
-    "short_desc":"стул для руководителя",
-    "description": "стул раскладной с высокой спинкой",
-    "price":"10000",
-    "quantity": "7"
-  },
-     {
-    "category": "классика",
-    "name":"пианино",
-    "image": "product/product-11.jpg",
-    "short_desc":"пианино обыкновенное",
-    "description": "Классическое пианино к оригинальным звучанием",
-    "price":"213",
-    "quantity": "32"
-  },
-     {
-    "category": "классика",
-    "name":"стол",
-    "image": "product/product-21.jpg",
-    "short_desc":"стол классический",
-    "description": "стол классический для гостинной со знаком иньянь",
-    "price":"100000",
-    "quantity": "5"
-  },
-     {
-    "category": "модерн",
-    "name":"картина",
-    "image": "product/product-31.jpg",
-    "short_desc":"картина в пикассо",
-    "description": "Современная картина в стиле пикассо",
-    "price":"5455",
-    "quantity": "32"
-  },
-     {
-    "category": "модерн",
-    "name":"стол",
-    "image": "product/product-14.jpg",
-    "short_desc":"крутой современный стол",
-    "description": "крутой современный стол для обеда",
-    "price":"32000",
-    "quantity": "2"
-  }
-]
+[{
+  "category": "1",
+  "name":"стол_api",
+  "image": "product/product-1.jpg",
+  "short_desc":"стол обеденный_api",
+  "description": "обеденный слол для кухни_api",
+  "price":"1500",
+  "quantity": "23"
+}]
